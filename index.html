@@ -3,36 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Finance Ledger</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav>
-        <a href="./index.html">
+    <header class="header">
+      <nav class="nav">
+        <a class="nav-logo link" href="./index.html">
           <img
             src="./images/icons/logo.svg"
             alt="Company logo"
             width="40"
             height="31"
           />
-          Finance Ledger
+          Finance <span class="nav-accent">Ledger</span>
         </a>
-        <ul>
-          <li>
-            <a href="#">Home</a>
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a class="nav-link link" href="./index.html">Home</a>
           </li>
-          <li>
-            <a href="#">About</a>
+          <li class="nav-item">
+            <a class="nav-link link" href="">About</a>
           </li>
-          <li>
-            <a href="#">Cases</a>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Cases</a>
           </li>
-          <li>
-            <a href="#">Blog</a>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Blog</a>
           </li>
-          <li>
-            <a href="#">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Contact</a>
           </li>
         </ul>
       </nav>
@@ -41,54 +56,59 @@
     <!-- Main Content -->
     <main>
       <!-- Hero -->
-      <section>
-        <h1>The Sky Is The Limit</h1>
-        <p>We provide world class financial assistance</p>
-        <a href="#">
-          <img src="./images/arrow-button.png" alt="Arrow button" />
-          Read More
-        </a>
+      <section class="hero">
+        <h1 class="hero-title">The Sky Is The Limit</h1>
+        <p class="hero-text">We provide world class financial assistance</p>
+        <button class="hero-button" type="button">
+          <img src="./images/icons/arrow-button.svg" alt="Arrow button" /> Read
+          More
+        </button>
       </section>
 
       <!-- Financial services and functions -->
-      <section>
-        <h2>Financial services and functions</h2>
-        <ul>
-          <li>
+      <section class="services">
+        <h2 class="services-title visually-hidden">
+          Financial services and functions
+        </h2>
+        <ul class="services-list list">
+          <li class="services-item">
             <img
+              class="services-icon"
               src="./images/icons/investmant-banking.svg"
               alt="Investmant Banking"
               width="35"
               height="35"
             />
-            <h3>Investmant Banking</h3>
-            <p>
+            <h3 class="services-subtitle">Investmant Banking</h3>
+            <p class="services-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequatur, necessitatibus!
             </p>
           </li>
-          <li>
+          <li class="services-item">
             <img
+              class="services-icon"
               src="./images/icons/portfolio-manager.svg"
               alt="Portfolio Manager"
               width="35"
               height="35"
             />
-            <h3>Portfolio Manager</h3>
-            <p>
+            <h3 class="services-subtitle">Portfolio Manager</h3>
+            <p class="services-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequatur, necessitatibus!
             </p>
           </li>
-          <li>
+          <li class="services-item">
             <img
+              class="services-icon"
               src="./images/icons/tax-custudio.svg"
               alt="Tax & Custudio"
               width="35"
               height="35"
             />
-            <h3>Tax & Custudio</h3>
-            <p>
+            <h3 class="services-subtitle">Tax & Custudio</h3>
+            <p class="services-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequatur, necessitatibus!
             </p>
@@ -97,91 +117,100 @@
       </section>
 
       <!-- Services and offers -->
-      <section>
+      <section class="offers">
         <img
+          class="offers-img"
           src="/images/services-and-offers.jpg"
           alt="Employees of the company"
           width="680"
           height="460"
         />
-        <p>What you are looking for</p>
-        <h2>We provide bespoke solutions</h2>
-        <p>
+        <p class="offers-subject">What you are looking for</p>
+        <h2 class="offers-title">We provide bespoke solutions</h2>
+        <p class="offers-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
           ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </p>
-        <a href="#">Read More</a>
+        <a class="offers-link link" href="#">Read More</a>
       </section>
 
       <!-- Business Cases -->
-      <section>
-        <p>This is what we do</p>
-        <h2>Business Cases</h2>
-        <p>
+      <section class="b-cases">
+        <p class="b-cases-subject">This is what we do</p>
+        <h2 class="b-cases-title">Business Cases</h2>
+        <p class="b-cases-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
           sapiente!
         </p>
-        <ul>
-          <li>
+        <ul class="b-cases-list list">
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img1.jpg"
               alt="A group of eight people at one table"
               width="320"
               height="214"
             />
           </li>
-          <li>
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img2.jpg"
               alt="A person writes a note in a notebook"
               width="320"
               height="214"
             />
           </li>
-          <li>
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img3.jpg"
               alt="Two people shake hands"
               width="320"
               height="214"
             />
           </li>
-          <li>
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img4.jpg"
               alt="A group of people put their hands on each other over a table with documents, a laptop and a cup of coffee"
               width="320"
               height="214"
             />
           </li>
-          <li>
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img5.jpg"
               alt="A woman works at a laptop"
               width="320"
               height="214"
             />
           </li>
-          <li>
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img6.jpg"
               alt="Three high-rise buildings are photographed against the sky"
               width="320"
               height="214"
             />
           </li>
-          <li>
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img7.jpg"
               alt="A group of people drinking coffee at the table and solving important issues"
               width="320"
               height="214"
             />
           </li>
-          <li>
+          <li class="b-cases-item">
             <img
+              class="b-cases-img"
               src="./images/business-cases/img8.jpg"
               alt="Two women and a man are smiling while sitting at the workplace"
               width="320"
@@ -192,17 +221,20 @@
       </section>
 
       <!-- Blog Post One -->
-      <section>
-        <time datetime="2020-04-16">April 16 2020</time>
-        <h2>Blog Post One</h2>
-        <p>
+      <section class="blog-post">
+        <time class="blog-post-subject" datetime="2020-04-16"
+          >April 16 2020</time
+        >
+        <h2 class="blog-post-title">Blog Post One</h2>
+        <p class="blog-post-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
           ipsum dignissimos quae laudantium asperiores nam aliquid impedit harum
           illum dolore explicabo ab dolores itaque rerum temporibus doloribus
           iste maiores deleniti?
         </p>
-        <a href="#">Read Our Blog</a>
+        <a class="blog-post-link link" href="#">Read Our Blog</a>
         <img
+          class="blog-post-img"
           src="./images/blog-post-one.jpg"
           alt="There are three notebooks with a pencil, a tablet and a cup of coffee on the table"
           width="680"
@@ -211,53 +243,58 @@
       </section>
 
       <!-- Our Professional Team -->
-      <section>
-        <p>Who we are</p>
-        <h2>Our Professional Team</h2>
-        <p>
+      <section class="team">
+        <p class="team-subject">Who we are</p>
+        <h2 class="team-title">Our Professional Team</h2>
+        <p class="team-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
           sapiente!
         </p>
-        <ul>
-          <li>
+        <ul class="team-list list">
+          <li class="team-item">
             <img
+              class="team-img"
               src="./images/our-professional-team/img1.jpg"
               alt="The man leaned against the wall"
               width="420"
               height="280"
             />
-            <h3>John Doe</h3>
-            <p>President</p>
+            <h3 class="team-subtitle">John Doe</h3>
+            <p class="team-desc">President</p>
           </li>
-          <li>
+          <li class="team-item">
             <!-- Social network icons -->
-            <ul>
-              <li>
+            <ul class="social-networks-list list">
+              <li class="social-networks-item">
                 <img
+                  class="social-networks-icon"
                   src="./images/icons/facebook-prof-team.svg"
                   alt="Facebook icon"
                   width="35"
                   height="35"
                 />
               </li>
-              <li>
+              <li class="social-networks-item">
                 <img
+                  class="social-networks-icon"
                   src="./images/icons/twitter-prof-team.svg"
                   alt="Twitter icon"
                   width="35"
                   height="35"
                 />
               </li>
-              <li>
+              <li class="social-networks-item">
                 <img
+                  class="social-networks-icon"
                   src="./images/icons/youtube-prof-team.svg"
                   alt="Youtube icon"
                   width="40"
                   height="35"
                 />
               </li>
-              <li>
+              <li class="social-networks-item">
                 <img
+                  class="social-networks-icon"
                   src="./images/icons/instagram-prof-team.svg"
                   alt="Instagram icon"
                   width="31"
@@ -266,30 +303,33 @@
               </li>
             </ul>
             <img
+              class="team-img"
               src="./images/our-professional-team/img2.jpg"
               alt="The girl is sitting on a chair"
               width="428"
               height="286"
             />
-            <h3>Jane Doe</h3>
-            <p>Vice President</p>
+            <h3 class="team-subtitle">Jane Doe</h3>
+            <p class="team-desc">Vice President</p>
           </li>
-          <li>
+          <li class="team-item">
             <img
+              class="team-img"
               src="./images/our-professional-team/img3.jpg"
               alt="A man with a cup of coffee in his hands is sitting at the workplace"
               width="420"
               height="280"
             />
-            <h3>Steve Smith</h3>
-            <p>Marketing Head</p>
+            <h3 class="team-subtitle">Steve Smith</h3>
+            <p class="team-desc">Marketing Head</p>
           </li>
         </ul>
       </section>
 
       <!-- Request Callback -->
-      <section>
+      <section class="callback">
         <img
+          class="callback-img"
           src="./images/request-callback.jpg"
           alt="A man with a phone in his hands is sitting at a workplace"
           width="680"
@@ -297,47 +337,57 @@
         />
 
         <form action="#">
-          <h2>Request Callback</h2>
+          <h2 class="callback-title">Request Callback</h2>
           <input
+            class="callback-desc"
             type="text"
             name="firstname"
             value="Enter your name"
           /><br /><br />
-          <input type="text" name="email" value="Enter email*" /><br /><br />
-          <input type="button" value="Send" />
+          <input
+            class="callback-desc"
+            type="text"
+            name="email"
+            value="Enter email*"
+          /><br /><br />
+          <input class="callback-button" type="button" value="Send" />
         </form>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <ul>
-        <li>
+    <footer class="footer">
+      <ul class="footer-list list">
+        <li class="footer-item">
           <img
+            class="footer-sn-icon"
             src="./images/icons/facebook-footer.svg"
             alt="Facebook icons"
             width="35"
             height="35"
           />
         </li>
-        <li>
+        <li class="footer-item">
           <img
+            class="footer-sn-icon"
             src="./images/icons/twitter-footer.svg"
             alt="Twitter icons"
             width="35"
             height="35"
           />
         </li>
-        <li>
+        <li class="footer-item">
           <img
+            class="footer-sn-icon"
             src="./images/icons/youtube-footer.svg"
             alt="Youtube icons"
             width="40"
             height="35"
           />
         </li>
-        <li>
+        <li class="footer-item">
           <img
+            class="footer-sn-icon"
             src="./images/icons/instagram-footer.svg"
             alt="Instagram icons"
             width="31"
@@ -345,7 +395,7 @@
           />
         </li>
       </ul>
-      <p>Copyright &copy; 2021 - FinanceLedger</p>
+      <p class="footer-copy">Copyright &copy; 2021 - FinanceLedger</p>
     </footer>
   </body>
 </html>
